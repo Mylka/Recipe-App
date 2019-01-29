@@ -1,8 +1,22 @@
-// Global app controller
-import num from './test';
-const x = 23;
+import Search from './models/Search';
 
-console.log(`I imported ${num} from another module called test.js! Variable x is ${x}`);
+const search = new Search('pasta');
+console.log(search);
+
+search.getResults('pasta');
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
