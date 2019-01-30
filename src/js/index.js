@@ -42,7 +42,24 @@ import {elements, renderLoader, clearLoader} from './views/base';
     elements.searchButton.addEventListener('submit', e =>{
      e.preventDefault();
      controlSearch();
- })
+ });
+
+    elements.searchResPages.addEventListener('click', e=>{
+        const btn = e.target.closest('.btn-inline');
+        if(btn){
+            const goToPage = parseInt(btn.dataset.goto, 10);
+            searchView.clearResults();
+            searchView.renderResults(state.search.result, goToPage);
+            
+            console.log(goToPage);
+           
+        }
+        
+    });
+
+
+
+
 
 
 
