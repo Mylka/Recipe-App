@@ -11,6 +11,7 @@ export const clearResults = () => {
     elements.searchResPages.innerHTML = '';
 };
 
+<<<<<<< HEAD
 export const highlightSelected = id => {
     const resultsArr = Array.from(document.querySelectorAll('.results__link'));
     resultsArr.forEach(el => {
@@ -20,6 +21,8 @@ export const highlightSelected = id => {
     document.querySelector(`a[href="#${id}"]`).classList.add('results__link--active');
     }
 
+=======
+>>>>>>> parent of 2bdeeeb... highlight selected recipe
 
 const limitRecipeTitle = (title, limit = 17) =>{
     const newTitle = [];
