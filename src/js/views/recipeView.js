@@ -62,12 +62,14 @@ export const renderRecipe = recipe => {
             <span class="recipe__info-data recipe__info-data--people">${recipe.servings}</span>
             <span class="recipe__info-text"> servings</span>
 
-            <div class="recipe__info-buttons">
-                <button class="btn-tiny btn-decrease">
+        <div class="recipe__info-buttons">
+               
+            <button class="btn-tiny btn-decrease">
                     <svg>
                         <use href="img/icons.svg#icon-circle-with-minus"></use>
                     </svg>
                 </button>
+               
                 <button class="btn-tiny btn-increase">
                     <svg>
                         <use href="img/icons.svg#icon-circle-with-plus"></use>
@@ -91,7 +93,7 @@ export const renderRecipe = recipe => {
         </ul> 
             
 
-        <button class="btn-small recipe__btn">
+        <button class="btn-small recipe__btn recipe__btn--add">
             <svg class="search__icon">
                 <use href="img/icons.svg#icon-shopping-cart"></use>
             </svg>
